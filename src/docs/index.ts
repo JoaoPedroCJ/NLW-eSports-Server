@@ -1,14 +1,10 @@
 import { readFileSync } from 'fs'
-import { dirname, resolve } from 'path'
-// import { fileURLToPath } from 'url';
+import { resolve } from 'path'
 
 import tags from './tags';
 import paths from './paths';
-import schemas from './schemas';
+import * as schemas from './schemas';
 import * as securitySchemes from './securitySchemes'
-
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
 
 const description = readFileSync(resolve(__dirname, 'description.md'), 'utf-8')
 
