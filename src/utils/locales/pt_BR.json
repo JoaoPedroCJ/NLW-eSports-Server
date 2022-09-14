@@ -1,7 +1,0 @@
-{
-  "error": {
-    "route_not_found": "Rota não encontrada. Gentileza entrar em contato com a MamãeAR.",
-    "require_authentication": "Você precisa estar logado.",
-    "not_authorized": "Você não tem permissão para realizar esta ação."
-  }
-}

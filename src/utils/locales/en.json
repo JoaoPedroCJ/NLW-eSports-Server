@@ -1,7 +1,0 @@
-{
-  "error": {
-    "route_not_found": "Route not found. Please contact MamãeAR.",
-    "require_authentication": "You must be logged.",
-    "not_authorized": "You are not allowed to perform this action."
-  }
-}
