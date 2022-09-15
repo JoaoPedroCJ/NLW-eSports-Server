@@ -31,13 +31,5 @@ export const adsGET = {
 }
 
 export const adsDiscordGET = {
-  type: 'object',
-  properties: {
-    discord: {
-      type: 'string'
-    },
-    useVoiceChannel: {
-      type: 'boolean'
-    }
-  }
+  type: 'string',
 }

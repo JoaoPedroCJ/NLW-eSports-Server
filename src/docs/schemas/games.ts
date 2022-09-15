@@ -70,9 +70,6 @@ export const gamesAdsPOSTResponse = {
         discord: {
           type: 'string'
         },
-        useVoiceChannel: {
-          type: 'boolean'
-        },
         createdAt: {
           type: 'string',
           format: 'date-time'
@@ -106,6 +103,9 @@ export const gamesAdsGET = {
     },
     hourEnd: {
       type: 'string'
-    }
+    },
+    useVoiceChannel: {
+      type: 'boolean'
+    },
   }
 };

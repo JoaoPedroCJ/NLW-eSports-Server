@@ -57,6 +57,7 @@ export default (app: Express): void => {
         weekDays: true,
         hourStart: true,
         hourEnd: true,
+        useVoiceChannel: true,
       },
       orderBy: {
         createdAt: "asc",
@@ -69,17 +70,16 @@ export default (app: Express): void => {
   app.get("/ads/:id/discord", async (request, response) => {
     const { id } = request.params;
   
-    const ad = await prisma.ad.findUniqueOrThrow({
+    const { discord } = await prisma.ad.findUniqueOrThrow({
       where: {
         id,
       },
       select: {
-        discord: true,
-        useVoiceChannel: true,
+        discord: true
       },
     });
   
-    return response.json(ad);
+    return response.json(discord);
   });
   
   app.get("/ads", async (request, response) => {
@@ -92,6 +92,7 @@ export default (app: Express): void => {
         weekDays: true,
         hourStart: true,
         hourEnd: true,
+        useVoiceChannel: true,
       },
       orderBy: {
         createdAt: "asc",
